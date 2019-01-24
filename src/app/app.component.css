@@ -1,12 +1,37 @@
 .welcome{
-    background: url('../assets/homepage3.jpg');
+    background: url('../assets/homepage.jpg');
     width: 100%;
     height: 100%;
+    top:0%;
+    background-size: cover;
 }
-
+.welcome .weltext{
+    background-image: linear-gradient(to top, #09203f 0%, #082e4b 100%);
+    opacity: .8;
+    width: 50%;
+    height: 30%;
+    border-radius: 8px;
+    box-shadow: 0 0 32px rgba(0,0,0,0.5);
+    position: relative;
+    top:40%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
 
 
 .imageinplace{
     height: 10%;
     width: 10%;
+}
+
+@media(max-width: 600px){
+    .welcome .weltext{
+        width: 100%;
+        height: 50%;
+        border-radius: 8px;
+        box-shadow: 32px 32px 32px rgba(0,0,0,0.5);
+        position: relative;
+        top:40%;
+        left:50%;
+    }
 }

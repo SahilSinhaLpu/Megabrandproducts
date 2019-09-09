@@ -4,9 +4,9 @@
     top:0%;
     background-size: cover;
     -webkit-animation-name: zoomIn;
-    -webkit-animation-duration: 0.5s;
+    -webkit-animation-duration: 1s;
     animation-name: zoomIn;
-    animation-duration: 0.5s;
+    animation-duration: 1s;
 }
 
 @-webkit-keyframes fadeInLeft {

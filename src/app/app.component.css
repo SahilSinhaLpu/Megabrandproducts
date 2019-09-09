@@ -1,10 +1,66 @@
 .welcome{
-    background: url('../assets/homepage.jpg');
     width: 100%;
-    height: 100%;
+    height: 75%;
     top:0%;
     background-size: cover;
+    -webkit-animation-name: zoomIn;
+    -webkit-animation-duration: 0.5s;
+    animation-name: zoomIn;
+    animation-duration: 0.5s;
 }
+
+@-webkit-keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(-100%, 0, 0);
+        transform: translate3d(-100%, 0, 0);
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(-100%, 0, 0);
+        transform: translate3d(-100%, 0, 0);
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@-webkit-keyframes zoomIn {
+    from {
+      opacity: 0;
+      -webkit-transform: scale3d(0.3, 0.3, 0.3);
+      transform: scale3d(0.3, 0.3, 0.3);
+    }
+  
+    50% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes zoomIn {
+    from {
+      opacity: 0;
+      -webkit-transform: scale3d(0.3, 0.3, 0.3);
+      transform: scale3d(0.3, 0.3, 0.3);
+    }
+  
+    50% {
+      opacity: 1;
+    }
+  }
+
 .welcome .weltext{
     background-image: linear-gradient(to top, #09203f 0%, #082e4b 100%);
     opacity: .8;

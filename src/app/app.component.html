@@ -1,8 +1,8 @@
-<body style="background:  linear-gradient(to right, #93291e, #93291e);">
+<body style="background:  linear-gradient(to right, #93291e, #93291e);" >
   <div class="ui large top fixed menu" style="background: linear-gradient(to bottom, #200122, #6f0000); box-shadow: 5px 5px 5px rgba(248, 38, 30, 0.5); ">
     <div class="item" style="left:50%; transform: translate(-50%,0%); font-family: 'Sunflower', sans-serif; font-size:20px; color: white; line-height: 20px;">Megabrand Products</div>
   </div>
-  <div class="welcome">
+  <div class="welcome" [ngStyle]= "{'background-image': 'url(' + photo + ')'}">
     <div class="weltext">
       <hr>
       <hr>
@@ -66,20 +66,20 @@
 
   
   <div class="ui fluid segment" style="  background:linear-gradient(to top, #1d4350, #a43931);">
-    <div class="ui inverted segment" >
-        <div class="ui large list" >
+        <div class="ui inverted segment" >
+            <div class="ui large list" >
+                <div class="item">
+                    <div class="header" style="color: white">Megabrand Products Pvt. Ltd. <i class="trademark icon"></i></div>
+                    Madhubhani, Bihar
+                </div>
+                <hr>
             <div class="item">
-              <div class="header" style="color: white">Megabrand Products Pvt. Ltd. <i class="trademark icon"></i></div>
-              Madhubhani, Bihar
-            </div>
-            <div class="item">
-              <div class="header" style="color: white"> <i class="envelope icon"></i>Contact Us:
+              <div class="header" style="color: white">Contact Us:
               </div>
-              <hr>
               Email id: megabrandproducts@gmail.com
               <br>
-              Find us on: 
-              <a href="https://www.facebook.com/pg/Megabrand-Products-Pvt-Ltd-247901202414334/about/?ref=page_internal"><i class="large facebook icon"></i></a>
+              Find us on: <br>
+              <a href="https://www.facebook.com/pg/Megabrand-Products-Pvt-Ltd-247901202414334/about/?ref=page_internal" target="_blank"><i class="facebook icon"></i></a>
             </div>
           </div>
     </div>
